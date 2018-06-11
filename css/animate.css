@@ -1,0 +1,198 @@
+@charset "utf-8";
+/*第一屏*/
+.banner1-title,
+.shadow{
+	transition: all 1s;
+}
+.banner1-title-init,.shadow-init{
+	transform: translate(0,100%);
+	opacity: 0;
+}
+.banner1-title-done{
+	transform: translate(0,0);
+	opacity:1;
+}
+.phone-init{
+	transform: translate(0,-100%);
+	opacity: 0;
+}
+
+.phone-done,.shadow-done{
+	transform: translate(0,0);
+	opacity:1;
+}
+/*第二屏*/
+.banner2-title,.banner2-title2,.phone2{
+	transition: all 1s;
+}
+.phone-tip1,.phone-tip2,.phone-tip3{
+	transition: all 1s .8s;
+}
+.banner2-title-init{
+	transform: translate(0,-100%);
+	opacity: 0;
+}
+.phone-tip1-init{
+	transform: translate(-100%,0);
+	opacity: 0;
+}
+.phone-tip2-init{
+	transform: translate(100%,0);
+	opacity: 0;
+}
+.phone-tip3-init{
+	transform: translate(100%,0);
+	opacity: 0;
+}
+.phone2-init{
+	transform: translate(0,30%);
+	opacity: 0;
+}
+.banner2-title2-init{ 
+	transform: translate(0,100%);
+	opacity: 0;
+}
+.banner2-title-done,.banner2-title2-done,.phone2-done,.phone-tip1-done,.phone-tip2-done,.phone-tip3-done{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.phone-tip1:after,.phone-tip2:after,.phone-tip3:after{
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: rgba(255,0,0,0.4);
+	animation:bounce 1s infinite ;
+}
+.phone-tip1:after{
+	left:228px;
+    top:5px;
+}
+.phone-tip2:after,.phone-tip3:after{
+	left:0px;
+    top:5px;
+}
+@-webkit-keyframes bounce{
+	0{transform: scale(0);}
+	100%{transform: scale(0);}
+}
+/*第三屏*/
+.banner3-title,.banner3-title2,.phone3,.phone-function{
+	transition: all 1s;
+}
+.banner3-title-init{
+	transform: translate(0,-100%);
+	opacity: 0;
+}
+.banner3-title2-init{
+	transform: translate(0,100%);
+	opacity: 0;
+}
+.phone3-init{
+	transform: translate(0,50%);
+	opacity: 0;
+}
+.phone-function-init{
+	transform:  scale(.2);
+	opacity: 0;
+}
+.banner3-title-done,.banner3-title2-done,.phone3-done{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.phone-function-done{
+	transform:  scale(1);
+	opacity: 1;
+}
+.phone-function li:hover{
+	transform: scale(1.1);
+	transition: all 1s ;
+	border:1px solid #fff;
+	cursor: pointer;
+}
+/*第四屏*/
+.banner4-title,.banner4-title2{
+	transition: all 1s;
+}
+.phone-item1{
+	transition: all 1s .5s;
+}
+.phone-item2{
+	transition: all 1s 1s;
+}
+.phone-item3{
+	transition: all  1s 1.5s;
+}
+.phone-item4{
+	transition: all 1s  2s;
+}
+.banner4-title-init{
+	transform: translate(-100%,0);
+	opacity: 0;
+}
+.banner4-title2-init{
+	transform: translate(100%,0);
+	opacity: 0;
+}
+.phone-item1-init,.phone-item2-init,.phone-item3-init,.phone-item4-init{
+	opacity: 0;
+}
+.phone-item1-done,.phone-item2-done,.phone-item3-done,.phone-item4-done{
+	opacity: 1;
+}
+.banner4-title-done{
+	transform: translate(0,0);
+	opacity: 1;
+}
+.banner4-title2-done{
+	transform: translate(0,0);
+	opacity: 1;
+}
+/*第五屏*/
+.banner5-title,.banner5-title2,.phone5{
+	transition: all 1s;
+}
+.banner5-title-init{
+	transform: translate(0,-100%);
+	opacity: 0;
+}
+.banner5-title2-init{
+	transform: translate(0,100%);
+	opacity: 0;
+}
+.phone5-init{
+	transform: translate(0,50%);
+	opacity: 0;
+}
+.banner5-title-done,.banner5-title2-done,.phone5-done{
+	transform: translate(0,0);
+	opacity: 1;
+}
+
+/*头部导航栏*/
+header{
+	transition:all 1s;
+}
+.header-fixed{
+	position: fixed;
+	background-color: rgba(0,0,0,.5);
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.header-fixed .logo,
+.header-fixed a{
+	color: #fff;
+}
+/*侧边导航*/
+.outline{
+	transition: all 1s;
+	transform: translate(100%,0);
+	opacity: 0;
+}
+.outline-fixed{
+	transform: translate(0,0);
+	opacity: 1;
+}
